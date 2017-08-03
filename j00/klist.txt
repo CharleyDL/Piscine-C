@@ -1,0 +1,8 @@
+Credentials cache: API:6CB5A359-7CA8-43DE-81F1-4D93EB489256
+        Principal: clebarbi@42.FR
+
+  Issued                Expires               Principal
+Aug  1 09:45:44 2017  Aug  8 09:45:44 2017  krbtgt/42.FR@42.FR
+Aug  1 09:45:47 2017  Aug  8 09:45:44 2017  ldap/ldap-proxy.42.fr@42.FR
+Aug  1 09:45:47 2017  Aug  8 09:45:44 2017  HTTP/student-storage-1.42.fr@42.FR
+Aug  1 09:56:10 2017  Aug  8 09:45:44 2017  host/vgs-fn1.42.fr@42.FR
