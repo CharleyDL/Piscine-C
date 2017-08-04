@@ -1,1 +1,1 @@
-void ft_print_comb(int n);
+void ft_print_combn(int n);
