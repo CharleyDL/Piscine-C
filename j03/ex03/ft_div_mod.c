@@ -6,12 +6,12 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/04 16:40:15 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/04 16:57:53 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/05 14:08:34 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	
-
+	*div = a / b;
+	*mod = a % b;
 }

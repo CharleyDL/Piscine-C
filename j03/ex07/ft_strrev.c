@@ -1,20 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/04 16:08:41 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/05 21:50:25 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/04 16:40:15 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/05 21:43:57 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
+char	*ft_strrev(char *str)
 {
-	int c;
+	int		cptr;
+	int		letter;
+	char	tmp;
 
-	c = *a;
-	*a = *b;
-	*b = c;
+	cptr = 0;
+	letter = 0;
+	while (str[cptr] != '\0')
+	{
+		cptr++;
+	}
+	cptr -= 1;
+	while (letter < cptr)
+	{
+		tmp = str[cptr];
+		str[cptr] = str[letter];
+		str[letter] = tmp;
+		letter++;
+		cptr--;
+	}
+	return (str);
 }

@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/04 16:08:41 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/05 21:50:25 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/05 16:17:07 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/05 21:36:56 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
+#include "ft_strrev.h"
+#include <stdio.h>
 
-void	ft_swap(int *a, int *b)
+void	ft_putchar(char c)
 {
-	int c;
+	write(1, &c, 1);
+}
 
-	c = *a;
-	*a = *b;
-	*b = c;
+char	*ft_strrev(char *str);
+
+int		main()
+{
+	char str[] = "testeur";
+	ft_strrev(str);
+	printf("%s", str);
+	return(0);
 }
