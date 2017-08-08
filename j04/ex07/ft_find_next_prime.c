@@ -1,45 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr2.c                                       :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/07 10:24:56 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/07 13:23:06 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/08 15:12:02 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/08 19:32:09 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_print_nbr(int nbr)
+int		ft_is_prime(int nb)
 {
-	if (nbr < 10)
-		ft_putchar(nbr + '0');
-	else
+	int r;
+
+	r = 2;
+	while (r < nb)
 	{
-		ft_print_nbr(nbr / 10);
-		ft_putchar((nbr % 10) + '0');
+		if (nb % r == 0)
+		{
+			return (0);
+		}
+		r++;
 	}
+	return (1);
 }
 
-
-void	ft_putnbr(int nb)
+int		ft_find_next_prime(int nb)
 {
-	if (nb < 0)
-	{
-		ft_putchar('-');
-		if (nb == -2147483648)
-		{
-			nb= nb / 10;
-			ft_print_nbr(-nb);
-			ft_putchar('8');
-		}
-		else
-		{
-			ft_print_nbr(-nb);
-		}
-	}
-	else
-		ft_print_nbr(nb);
+	if (ft_is_prime(nb))
+		return (nb);
+	while (!ft_is_prime(nb))
+		nb += 1;
+	return (nb);
 }

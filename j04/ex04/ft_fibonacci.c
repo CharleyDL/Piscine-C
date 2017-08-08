@@ -1,45 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr2.c                                       :+:      :+:    :+:   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/07 10:24:56 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/07 13:23:06 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/08 10:27:32 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/08 10:54:55 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_print_nbr(int nbr)
+int		ft_fibonacci(int index)
 {
-	if (nbr < 10)
-		ft_putchar(nbr + '0');
-	else
-	{
-		ft_print_nbr(nbr / 10);
-		ft_putchar((nbr % 10) + '0');
-	}
-}
-
-
-void	ft_putnbr(int nb)
-{
-	if (nb < 0)
-	{
-		ft_putchar('-');
-		if (nb == -2147483648)
-		{
-			nb= nb / 10;
-			ft_print_nbr(-nb);
-			ft_putchar('8');
-		}
-		else
-		{
-			ft_print_nbr(-nb);
-		}
-	}
-	else
-		ft_print_nbr(nb);
+	if (index > 47)
+		return (0);
+	else if (index < 0)
+		return (-1);
+	else if (index == 0 || index == 1)
+		return (1);
+	else if (index >= 0)
+		index = ft_fibonacci(index -1) + (ft_fibonacci(index - 2));
+	return(index);
 }

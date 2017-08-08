@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/05 22:12:59 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/06 11:06:52 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/06 19:56:30 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int main()
 {
-	char *str = "   13081989";
+	char *str = "-2040483657";
 	
 	int transpo = ft_atoi(str);
 	printf("%d", transpo);

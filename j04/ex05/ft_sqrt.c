@@ -1,45 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr2.c                                       :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/07 10:24:56 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/07 13:23:06 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/08 10:57:08 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/08 12:04:33 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_print_nbr(int nbr)
+int		ft_sqrt(int nb)
 {
-	if (nbr < 10)
-		ft_putchar(nbr + '0');
-	else
-	{
-		ft_print_nbr(nbr / 10);
-		ft_putchar((nbr % 10) + '0');
-	}
-}
+	int r;
 
-
-void	ft_putnbr(int nb)
-{
-	if (nb < 0)
+	r = 0;
+	while (r * r != nb)
 	{
-		ft_putchar('-');
-		if (nb == -2147483648)
-		{
-			nb= nb / 10;
-			ft_print_nbr(-nb);
-			ft_putchar('8');
-		}
+		if(nb <= 0 || r * r > nb)
+			return (0);
 		else
-		{
-			ft_print_nbr(-nb);
-		}
+			r++;
 	}
-	else
-		ft_print_nbr(nb);
+	return (r);
 }
