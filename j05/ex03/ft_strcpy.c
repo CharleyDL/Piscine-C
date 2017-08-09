@@ -1,40 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/03 10:54:22 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/09 15:40:34 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/09 14:54:32 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/09 15:29:57 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_print_comb2(void)
+char	*ft_strcpy(char *dest, char *src)
 {
-	int a;
-	int b;
+	int x;
 
-	a = 0;
-	while (a != 99)
+	x = 0;
+	while (src[x] != '\0')
 	{
-		b = a + 1;
-		while (b != 100)
-		{
-			ft_putchar(a / 10 + '0');
-			ft_putchar(a % 10 + '0');
-			ft_putchar(' ');
-			ft_putchar(b / 10 + '0');
-			ft_putchar(b % 10 + '0');
-			if (a != 98 || b != 99)
-			{
-				ft_putchar(',');
-				ft_putchar(' ');
-			}
-			b++;
-		}
-		a++;
+		dest[x] = src[x];
+		x++;
 	}
+	dest[x + 1] = '\0';
+	return (dest);
 }

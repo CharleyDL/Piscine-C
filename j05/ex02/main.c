@@ -1,40 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/03 10:54:22 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/09 15:40:34 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/05 22:12:59 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/06 19:56:30 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <stdio.h>
+#include "ft_atoi.h"
 
-void	ft_print_comb2(void)
+int main()
 {
-	int a;
-	int b;
-
-	a = 0;
-	while (a != 99)
-	{
-		b = a + 1;
-		while (b != 100)
-		{
-			ft_putchar(a / 10 + '0');
-			ft_putchar(a % 10 + '0');
-			ft_putchar(' ');
-			ft_putchar(b / 10 + '0');
-			ft_putchar(b % 10 + '0');
-			if (a != 98 || b != 99)
-			{
-				ft_putchar(',');
-				ft_putchar(' ');
-			}
-			b++;
-		}
-		a++;
-	}
+	char *str = "-2040483657";
+	
+	int transpo = ft_atoi(str);
+	printf("%d", transpo);
 }

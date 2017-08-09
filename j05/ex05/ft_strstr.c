@@ -1,40 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/03 10:54:22 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/09 15:40:34 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/09 16:08:23 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/09 16:20:38 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_print_comb2(void)
+char	*ft_strstr(char *str, char *to_find)
 {
-	int a;
-	int b;
 
-	a = 0;
-	while (a != 99)
-	{
-		b = a + 1;
-		while (b != 100)
-		{
-			ft_putchar(a / 10 + '0');
-			ft_putchar(a % 10 + '0');
-			ft_putchar(' ');
-			ft_putchar(b / 10 + '0');
-			ft_putchar(b % 10 + '0');
-			if (a != 98 || b != 99)
-			{
-				ft_putchar(',');
-				ft_putchar(' ');
-			}
-			b++;
-		}
-		a++;
-	}
+
+	return (0);
 }
