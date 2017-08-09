@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/07 10:24:56 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/07 13:23:06 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/08 21:51:30 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ void	ft_print_nbr(int nbr)
 	}
 }
 
-
 void	ft_putnbr(int nb)
 {
 	if (nb < 0)
@@ -31,7 +30,7 @@ void	ft_putnbr(int nb)
 		ft_putchar('-');
 		if (nb == -2147483648)
 		{
-			nb= nb / 10;
+			nb = nb / 10;
 			ft_print_nbr(-nb);
 			ft_putchar('8');
 		}

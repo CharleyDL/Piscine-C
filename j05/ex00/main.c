@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_eight_queens_puzzle.c                           :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/08 19:47:29 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/09 11:16:18 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/05 16:17:07 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/05 17:27:40 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
+#include "ft_putstr.h"
 
-void	ft_putchar(char c);
-
-void	ft_eight_queens_puzzle_2(void)
+void	ft_putchar(char c)
 {
-	int i;
-	int j;
-	
-	i = 1;
-	j = 1;
-	while (i < 8)
-	{
-		tab[i] = 1;
-		while (j < i - 1)
-			if (tab[i] == tab[j] || tab[i] - tab[j] == i - j)
-				tab[i] == tab[i] + 1;
-				if(tab[i] <= 8)
-					i = i - 1;
-				else if <>
-	}
+	write(1, &c, 1);
+}
+
+void	ft_putstr(char *str);
+
+int		main()
+{
+	char *str;
+
+	str = "test";
+	ft_putstr(str);
 }

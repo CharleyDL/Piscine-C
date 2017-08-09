@@ -3,7 +3,7 @@
 
 int main()
 {
-	int nb = -81;
+	int nb = 16;
 	int result;
 
 	result = ft_sqrt(nb);

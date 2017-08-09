@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_eight_queens_puzzle.c                           :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/08 19:47:29 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/09 11:16:18 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/09 11:25:39 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/09 13:01:44 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_eight_queens_puzzle_2(void)
+void	ft_putstr(char *str)
 {
-	int i;
-	int j;
-	
-	i = 1;
-	j = 1;
-	while (i < 8)
+	int letter;
+
+	letter = 0;
+	while (str[letter] != '\0')
 	{
-		tab[i] = 1;
-		while (j < i - 1)
-			if (tab[i] == tab[j] || tab[i] - tab[j] == i - j)
-				tab[i] == tab[i] + 1;
-				if(tab[i] <= 8)
-					i = i - 1;
-				else if <>
+		ft_putchar(str[letter]);
+		letter++;
 	}
 }

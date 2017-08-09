@@ -6,13 +6,13 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/07 18:59:40 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/07 18:59:47 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/09 13:10:19 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_recursive_factorial(int nb)
 {
-	if (nb <= 0 || nb > 12)
+	if (nb >= 0 || nb <= 12)
 		return(0);
 	if (nb == 1)
 		return(1);

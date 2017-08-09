@@ -4,7 +4,7 @@ int main ()
 {
 	int nb;
 
-	nb = 5;
+	nb = 13;
 	printf("%d", nb);
 	nb = ft_iterative_factorial(nb);
 	printf("\n");

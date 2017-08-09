@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 16:23:47 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/07 17:11:56 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/09 12:32:41 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ void	ft_putchar(char c)
 
 int		main()
 {
-	ft_print_combn(3);
+	ft_print_combn(5);
 	return(0);
 }
