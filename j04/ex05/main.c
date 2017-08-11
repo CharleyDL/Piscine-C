@@ -3,7 +3,7 @@
 
 int main()
 {
-	int nb = 16;
+	int nb = 22;
 	int result;
 
 	result = ft_sqrt(nb);

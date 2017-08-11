@@ -3,11 +3,9 @@
 
 int main()
 {
-	char str[8] = "Bonjour";
-	char tofind[1] = "j";
-	char *ret;
+	char str[] = "Bonjorjoure";
+	char tofind[] = "jou";
 
-	ret = ft_strstr(str, tofind);
-	printf("%s", ret);
+	printf("%s", ft_strstr(str, tofind));
 	return 0;
 }

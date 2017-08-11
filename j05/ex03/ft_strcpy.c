@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/09 14:54:32 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/09 15:29:57 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/09 18:00:11 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ char	*ft_strcpy(char *dest, char *src)
 		dest[x] = src[x];
 		x++;
 	}
-	dest[x + 1] = '\0';
+	dest[x] = '\0';
 	return (dest);
 }

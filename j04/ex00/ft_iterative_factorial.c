@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/06 17:13:54 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/09 13:09:44 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/10 11:03:18 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int		ft_iterative_factorial(int nb)
 
 	if (nb < 0)
 	{
-		return(0);
+		return (0);
 	}
 	if (nb == 1 || nb == 0)
 		return (1);
@@ -27,5 +27,5 @@ int		ft_iterative_factorial(int nb)
 			nb--;
 			result *= nb;
 		}
-	return(result);
+	return (result);
 }

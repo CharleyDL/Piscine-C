@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/08 10:57:08 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/08 12:04:33 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/10 11:52:16 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int		ft_sqrt(int nb)
 	r = 0;
 	while (r * r != nb)
 	{
-		if(nb <= 0 || r * r > nb)
+		if (nb <= 0 || r * r > nb)
 			return (0);
 		else
 			r++;
