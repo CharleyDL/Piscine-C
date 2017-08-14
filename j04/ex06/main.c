@@ -3,7 +3,7 @@
 
 int	main()
 {
-	int nb = 13;
+	int nb = 7;
 	int result;
 
 	result = ft_is_prime(nb);

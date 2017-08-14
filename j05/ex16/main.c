@@ -1,10 +1,11 @@
 #include <stdio.h>
-#include "ft_strcat.h"
+
+char	*ft_strcat(char *dest, char *src);
 
 int main ()
 {
-	char dest[] = "bonjour ";
-	char src[] = "ca va";
+	char dest[25] = "bonjour";
+	char src[] = "cava";
 
 	ft_strcat(dest, src);
 	printf("%s", dest);

@@ -1,41 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/08 15:12:02 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/14 12:54:08 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/14 15:40:57 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/14 18:58:55 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_is_prime(int nb)
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	int x;
+	unsigned int x;
+	unsigned int dlen;
+	unsigned int slen;
 
-	x = 2;
-	if (x < 2)
-		return (0);
-	while (x <= nb / x)
+	x = 0;
+	dlen = 0;
+	slen = 0;
+	while (dest[dlen] != '\0')
+		dlen++;
+	while (src[slen] != '\0')
+		slen++;
+	if (size - 1 <= dlen)
+		return (slen + size);
+	while (dlen + x < size - 1)
 	{
-		if (nb % x == 0)
-		{
-			return (0);
-		}
+		dest[dlen + x] = src[x];
 		x++;
 	}
-	return (1);
-}
-
-int		ft_find_next_prime(int nb)
-{
-	if (nb < 2)
-		return (2);
-	while (1)
-	{
-		if (ft_is_prime(nb))
-			return (nb);
-		nb++;
-	}
+	dest[dlen + 1] = '\0';
+	return (dlen + slen);
 }

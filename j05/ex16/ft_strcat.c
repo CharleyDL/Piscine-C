@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/11 16:05:19 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/11 16:50:06 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/14 13:43:25 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,11 @@ char	*ft_strcat(char *dest, char *src)
 	while (dest[x] != '\0')
 		x++;
 	while (src[y] != '\0')
-		dest[x + y] = src[y];
-	dest[x + y] = '\0';
+	{
+		dest[x] = src[y];
+		x++;
+		y++;
+	}
+	dest[x] = '\0';
 	return (dest);
 }

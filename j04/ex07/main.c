@@ -5,7 +5,7 @@ int main ()
 {
 	int nb;
 	int result;
-	nb = 854896585;
+	nb = 24;
 
 	result = ft_find_next_prime(nb);
 	printf("%d", result);

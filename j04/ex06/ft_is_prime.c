@@ -6,22 +6,22 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/08 12:12:59 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/08 19:28:39 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/14 12:30:24 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_is_prime(int nb)
 {
-	int r;
+	int x;
 
-	r = 2;
-	while (r < nb)
+	x = 2;
+	if (nb < 2)
+		return (0);
+	while (x <= nb / x)
 	{
-		if (nb % r == 0)
-		{
+		if (nb % x == 0)
 			return (0);
-		}
-		r++;
+		x++;
 	}
 	return (1);
 }
