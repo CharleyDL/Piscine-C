@@ -4,6 +4,6 @@
 int main()
 {
 	int x = -42;
-	printf("%d", ABS(x);
+	printf("%d", ABS(x));
 	return (0);
 }

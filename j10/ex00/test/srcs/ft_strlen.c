@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/18 14:42:43 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/22 17:03:35 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/04 16:40:15 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/05 18:16:16 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_H
-# define FT_ABS_H
+int		ft_strlen(char *str)
+{
+	int cptr;
 
-# define ABS(Value) Value > 0 ? Value : -Value
-
-#endif
+	cptr = 0;
+	while (str[cptr] != '\0')
+	{
+		cptr++;
+	}
+	return (cptr);
+}

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/18 14:42:43 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/22 17:03:35 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/14 20:18:38 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/14 20:24:05 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_H
-# define FT_ABS_H
+#include <unistd.h>
 
-# define ABS(Value) Value > 0 ? Value : -Value
-
-#endif
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
