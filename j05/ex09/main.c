@@ -3,7 +3,7 @@
 
 int main ()
 {
-	char str[] = "CAMARCHE";
+	char str[] = "./138n3XLXG8aadqh3blap47ef";
 
 	printf("%s", ft_strlowcase(str));
 	return 0;

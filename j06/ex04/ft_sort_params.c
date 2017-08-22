@@ -6,16 +6,11 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/15 17:03:56 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/15 22:07:59 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/16 14:43:18 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
@@ -44,17 +39,17 @@ int		ft_strcmp(char *s1, char *s2)
 
 void	ft_sort(char **tab, int size)
 {
-	char *tmp;
-	int x;
-	int y;
+	char	*tmp;
+	int		x;
+	int		y;
 
-	x = 0;
+	x = 1;
 	while (x < size)
 	{
 		y = 1;
 		while (y != size)
 		{
-			if (ft_strcmp(tab[x], tab[x + 1]) > 0)
+			if (ft_strcmp(tab[y], tab[y + 1]) > 0)
 			{
 				tmp = tab[y];
 				tab[y] = tab[y + 1];
@@ -68,8 +63,6 @@ void	ft_sort(char **tab, int size)
 	}
 }
 
-
-
 int		main(int argc, char **argv)
 {
 	int x;
@@ -79,6 +72,7 @@ int		main(int argc, char **argv)
 	while (x < argc)
 	{
 		ft_putstr(argv[x]);
+		ft_putchar('\n');
 		x++;
 	}
 	return (0);

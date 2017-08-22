@@ -6,11 +6,11 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/09 19:26:44 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/10 12:55:08 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/20 19:06:49 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char * s2)
+int		ft_strcmp(char *s1, char *s2)
 {
 	int x;
 
@@ -19,6 +19,6 @@ int		ft_strcmp(char *s1, char * s2)
 		if (s1[x] == s2[x])
 			x++;
 		else
-			return (s1[x] - s2[x]);
+			return ((unsigned)s1[x] - (unsigned)s2[x]);
 	return (0);
 }

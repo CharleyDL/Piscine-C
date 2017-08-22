@@ -6,11 +6,11 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/15 13:33:43 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/15 16:54:26 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/17 12:11:13 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c)
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {

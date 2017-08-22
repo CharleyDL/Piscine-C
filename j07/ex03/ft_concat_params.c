@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/17 13:03:59 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/17 14:20:11 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/20 20:13:22 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int		ft_calcul_length(int argc, char **argv)
 	int x;
 	int length;
 
+	length = 0;
 	while (argc > 1)
 	{
 		x = 0;
@@ -42,7 +43,7 @@ char	*ft_concat_params(int argc, char **argv)
 	y = 0;
 	z = 0;
 	length = ft_calcul_length(argc, argv);
-	cat = (char*)malloc(sizeof(char*) * (length + 1));
+	cat = (char*)malloc(sizeof(char) * (length + 1));
 	while (x < argc)
 	{
 		while (argv[x][y])

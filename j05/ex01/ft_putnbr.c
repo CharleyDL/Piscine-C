@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/09 13:12:25 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/09 13:30:51 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/15 16:29:30 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ void	ft_putnbr(int nb)
 			ft_print_number(-nb);
 			ft_putchar('8');
 		}
+		else
+			ft_print_number(-nb);
 	}
 	else
 		ft_print_number(nb);

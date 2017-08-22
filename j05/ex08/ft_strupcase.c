@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 14:04:36 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/10 14:25:50 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/16 17:45:39 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,15 @@ char	*ft_strupcase(char *str)
 
 	x = 0;
 	while (str[x] != '\0')
+	{
 		if (str[x] >= 'a' && str[x] <= 'z')
 		{
 			str[x] -= 'a' - 'A';
 			x++;
 		}
+		else if ((str[x] >= ' ' && str[x] <= '`') ||
+					(str[x] >= '{' && str[x] <= '~'))
+			x++;
+	}
 	return (str);
 }

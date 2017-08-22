@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/16 13:10:57 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/17 12:18:58 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/20 20:11:55 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(char *src)
 	x = 0;
 	while (src[x] != '\0')
 		x++;
-	dup = (char*)malloc(sizeof(*dup) * (x + 1));
+	dup = (char*)malloc(sizeof(char) * (x + 1));
 	x = 0;
 	if (!dup)
 		return (NULL);

@@ -3,8 +3,8 @@
 
 int main ()
 {
-	char s1[] = "i";
-	char s2[] = "a";
+	char s1[] = "a";
+	char s2[] = "ab";
 
 	printf("%d", ft_strcmp(s1, s2));
 	return 0;

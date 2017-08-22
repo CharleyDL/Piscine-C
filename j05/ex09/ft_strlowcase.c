@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 14:35:17 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/10 14:43:20 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/16 13:45:00 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,12 @@ char	*ft_strlowcase(char *str)
 	{
 		if (str[x] >= 'A' && str[x] <= 'Z')
 		{
-		str[x] -= 'A' - 'a';
-		x++;
+			str[x] -= 'A' - 'a';
+			x++;
 		}
+		else if ((str[x] >= ' ' && str[x] <= '@') ||
+				(str[x] >= '[' && str[x] <= '~'))
+			x++;
 	}
 	return (str);
 }
