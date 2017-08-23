@@ -1,35 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_words_tables.c                            :+:      :+:    :+:   */
+/*   ft_reach.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/17 18:04:14 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/23 12:24:43 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/23 12:02:43 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/23 17:48:51 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <unistd.h>
-
-void	ft_putchar(char c);
-
-void	ft_print_words_tables(char **tab)
+void	ft_reach(int *tab, int length, void (*f)(int))
 {
 	int x;
-	int y;
 
 	x = 0;
-	while (tab[x] != '\0')
+	while (x < length)
 	{
-		y = 0;
-		while (tab[x][y] != '\0')
-		{
-			ft_putchar(tab[x][y]);
-			y++;
-		}
-		ft_putchar('\n');
+		(*f)(tab[x]);
 		x++;
 	}
 }

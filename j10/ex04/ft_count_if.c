@@ -1,35 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_words_tables.c                            :+:      :+:    :+:   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/17 18:04:14 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/23 12:24:43 by clebarbi         ###   ########.fr       */
+/*   Created: 2017/08/23 14:30:52 by clebarbi          #+#    #+#             */
+/*   Updated: 2017/08/23 17:53:36 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <unistd.h>
-
-void	ft_putchar(char c);
-
-void	ft_print_words_tables(char **tab)
+int		ft_count_if(char **tab, int (*f)(char*))
 {
 	int x;
-	int y;
+	int cptr;
 
 	x = 0;
-	while (tab[x] != '\0')
+	cptr = 0;
+	while (tab[x])
 	{
-		y = 0;
-		while (tab[x][y] != '\0')
+		if ((*f)(tab[x]) == 1)
 		{
-			ft_putchar(tab[x][y]);
-			y++;
+			cptr++;
+			x++;
 		}
-		ft_putchar('\n');
 		x++;
 	}
+	return (cptr);
 }
