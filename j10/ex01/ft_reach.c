@@ -6,7 +6,7 @@
 /*   By: clebarbi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/23 12:02:43 by clebarbi          #+#    #+#             */
-/*   Updated: 2017/08/23 17:48:51 by clebarbi         ###   ########.fr       */
+/*   Updated: 2017/08/23 19:47:36 by clebarbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_reach(int *tab, int length, void (*f)(int))
 	x = 0;
 	while (x < length)
 	{
-		(*f)(tab[x]);
+		f(tab[x]);
 		x++;
 	}
 }
